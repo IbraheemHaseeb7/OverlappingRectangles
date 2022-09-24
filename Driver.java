@@ -1,7 +1,25 @@
 public class Driver {
   public static void main(String[] args) {
-    Rectangle r1 = new Rectangle(10, 10, 5, 5).CalculateParameters();
-    Rectangle r2 = new Rectangle(10, 10, 0, 0).CalculateParameters();
+
+
+
+
+
+
+    Rectangle r1 = new Rectangle(10, 10, 5, 5);
+    r1.CalculateParameters();
+
+
+
+
+
+    Rectangle r2 = new Rectangle(10, 10, 0, 0);
+    r2.CalculateParameters();
+
+
+
+
+
 
     if (isCheckOverlap(r1, r2)) {
       System.out.println("Rectangles are Overlapping");
@@ -33,7 +51,7 @@ public class Driver {
   }
 
   static boolean isCheckOverlap(Rectangle r1, Rectangle r2) {
-    if ((((r2.x1 >= r1.x1 && r2.x1 <= r1.x2) || (r2.x2 >= r1.x1 && r2.x2 <= r1.x2)) &&((r2.y1 >= r1.y1 && r2.y1 <= r1.y3) || (r2.y3 >= r1.y1 && r2.y3 <= r1.y3))) || (((r1.x1 >= r2.x1 && r1.x1 <= r2.x2) || (r1.x2 >= r2.x1 && r1.x2 <= r2.x1)) &&((r1.y1 >= r2.y1 && r1.y1 <= r2.y3) || (r1.y3 >= r2.y1 && r1.y3 <= r2.y3)))) {
+    if ((((r2.x1 >= r1.x1 && r2.x1 <= r1.x2) || (r2.x2 >= r1.x1 && r2.x2 <= r1.x2)) && ((r2.y1 >= r1.y1 && r2.y1 <= r1.y3) || (r2.y3 >= r1.y1 && r2.y3 <= r1.y3))) || (((r1.x1 >= r2.x1 && r1.x1 <= r2.x2) || (r1.x2 >= r2.x1 && r1.x2 <= r2.x1)) &&((r1.y1 >= r2.y1 && r1.y1 <= r2.y3) || (r1.y3 >= r2.y1 && r1.y3 <= r2.y3)))) {
       return true;
     } else {
       return false;
