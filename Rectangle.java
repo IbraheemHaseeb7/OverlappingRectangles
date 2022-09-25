@@ -7,6 +7,7 @@ class Rectangle {
     this.width = width;
     this.x1 = x1;
     this.y1 = y1;
+    CalculateParameters();
   }
 
   String showAttributes() {
