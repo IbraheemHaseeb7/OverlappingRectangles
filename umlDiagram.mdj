@@ -188,11 +188,30 @@
 									"model": {
 										"$ref": "AAAAAAGDcDZQltMetxQ="
 									},
+									"subViews": [
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGDdjN8nZ0yT5o=",
+											"_parent": {
+												"$ref": "AAAAAAGDcDZQmNMnTQA="
+											},
+											"model": {
+												"$ref": "AAAAAAGDdjN8jp0vmCc="
+											},
+											"font": "Arial;13;0",
+											"left": 293,
+											"top": 195,
+											"width": 246.77783203125,
+											"height": 13,
+											"text": "+main()",
+											"horizontalAlignment": 0
+										}
+									],
 									"font": "Arial;13;0",
 									"left": 288,
 									"top": 190,
 									"width": 256.77783203125,
-									"height": 10
+									"height": 23
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
@@ -1468,6 +1487,16 @@
 							"type": {
 								"$ref": "AAAAAAGDc8AklKDPw98="
 							}
+						}
+					],
+					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGDdjN8jp0vmCc=",
+							"_parent": {
+								"$ref": "AAAAAAGDcDZQltMetxQ="
+							},
+							"name": "main"
 						}
 					]
 				},
