@@ -1,4 +1,6 @@
 class Rectangle {
+
+  // attributes
   public int x1, y1, height, width, x2, y2, x3, y3, x4, y4;
 
   // constructor
@@ -10,10 +12,14 @@ class Rectangle {
     CalculateParameters();
   }
 
+  // returns a string that has all the attributes
   String showAttributes() {
-    return String.format("Height: %d\nWidth: %d\nX1: %d\tY1: %d\nX2: %d\tY2: %d\nX3: %d\tY3: %d\nX4: %d\tY4: %d", height, width, x1, y1, x2, y2, x3, y3, x4, y4);
+    return String.format("Height: %d\nWidth: %d\nX1: %d\tY1: %d\nX2: %d\tY2: %d\nX3: %d\tY3: %d\nX4: %d\tY4: %d",
+        height, width, x1, y1, x2, y2, x3, y3, x4, y4);
   }
 
+  // calculates attributes of the rectangle on the basis of width, height, x1 and
+  // y1
   public void CalculateParameters() {
     x2 = x1 + width;
     y2 = y1;
@@ -23,4 +29,3 @@ class Rectangle {
     y4 = y1 + height;
   }
 }
-

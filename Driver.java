@@ -2,8 +2,8 @@ public class Driver {
   public static void main(String[] args) {
 
     // creating rectangles and initializing their parameters
-    Rectangle r1 = new Rectangle(10, 10, 5, 5);
-    Rectangle r2 = new Rectangle(10, 10, 0, 0);
+    Rectangle r1 = new Rectangle(10, 10, 0, 5);
+    Rectangle r2 = new Rectangle(10, 10, 5, 0);
 
     // creating overlapping method to call some methods
     Overlap overlap = new Overlap(r1, r2);
